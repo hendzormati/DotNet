@@ -1,4 +1,5 @@
 ﻿using AM.ApplicationCore.Domain;
+using AM.ApplicationCore.Services;
 
 Plane plane1 = new Plane();
 plane1.Capacity = 100;
@@ -26,7 +27,16 @@ Console.WriteLine(staff.ToString());
 staff.PassengerType();
 Console.WriteLine(traveller.ToString());
 traveller.PassengerType();
-
-
+// td 2 ;
+FlightMethods fm = new FlightMethods { flights= TestData.listFlights };
+string destination = "Paris";
+Console.WriteLine(" List Dates de la destination "+ destination+"  : \n ");
+List<DateTime> list = new List<DateTime> { };
+list=(List<DateTime>)fm.GetFlightDates(destination);
+// using foreach loop
+foreach (DateTime d in list)
+{
+    Console.WriteLine(" Flight Date : "+d);
+}
 
 
