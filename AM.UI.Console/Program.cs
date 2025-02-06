@@ -29,7 +29,7 @@ Console.WriteLine(traveller.ToString());
 traveller.PassengerType();
 // td 2 ;
 FlightMethods fm = new FlightMethods { flights= TestData.listFlights };
-string destination = "Paris";
+string destination = "Madrid";
 Console.WriteLine(" List Dates de la destination "+ destination+"  : \n ");
 List<DateTime> list = new List<DateTime> { };
 list=(List<DateTime>)fm.GetFlightDates(destination);
@@ -37,6 +37,13 @@ list=(List<DateTime>)fm.GetFlightDates(destination);
 foreach (DateTime d in list)
 {
     Console.WriteLine(" Flight Date : "+d);
+}
+fm.ShowFlightDetails(TestData.BoingPlane);
+Console.WriteLine(" nb vol : "+fm.ProgrammedFlightNumber(new DateTime(2021,12 ,2)));
+Console.WriteLine(" average duration : "+fm.DurationAverage(destination));
+foreach( Flight f in fm.OrderedDurationFlights())
+{
+    Console.WriteLine(" Flight : "+f.ToString());
 }
 
 

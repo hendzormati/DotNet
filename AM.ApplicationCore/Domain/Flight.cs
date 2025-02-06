@@ -13,7 +13,7 @@
 
         public override string ToString()
         {
-            return ("FlightId : " + this.FlightId+" Destination "+ this.Destination + " \n");
+            return ("FlightId : " + this.FlightId+" Destination "+ this.Destination + " estimated duration "+ this.EstimatedDuration+  " \n");
         }
 
     }
