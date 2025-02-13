@@ -45,5 +45,22 @@ foreach( Flight f in fm.OrderedDurationFlights())
 {
     Console.WriteLine(" Flight : "+f.ToString());
 }
-
-
+foreach ( Passenger p in fm.SeniorTravellers(TestData.flight1))
+{
+    Console.WriteLine(" Senior Traveller : "+p.ToString());
+}
+fm.DestinationGroupedFlights();
+// methode 2 
+Console.WriteLine();
+foreach (var g in fm.DestinationGroupedFlightsV2())
+{
+    Console.WriteLine(" Destination : "+g.Key);
+    foreach (Flight f in g)
+    {
+        Console.WriteLine("Décollage : "+f.FlightDate.ToString());
+    }
+}
+// calling the delegate
+Console.WriteLine();
+fm.FlightDetailsDel(TestData.BoingPlane);
+Console.WriteLine(" average duration : "+fm.DurationAverageDel(destination));
