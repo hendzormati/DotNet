@@ -15,6 +15,9 @@ Plane plane4 = new Plane {  };
 Console.WriteLine("Initialisateur d'objet vide : "+plane4.ToString());
 // using initialisation from now no more constructeur 
 Passenger passenger = new Passenger {FirstName="hend",LastName="zormati",EmailAddress="a@b.c" };
+
+Console.WriteLine(passenger.ToString());
+passenger.UpperFullName();
 Console.WriteLine(passenger.ToString());
 Console.WriteLine(passenger.CheckProfile("hend", "zormati")+"\n");
 Console.WriteLine(passenger.CheckProfile("hend", "not")+"\n");
