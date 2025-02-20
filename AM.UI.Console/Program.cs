@@ -1,5 +1,6 @@
 ﻿using AM.ApplicationCore.Domain;
 using AM.ApplicationCore.Services;
+using AM.Infrastructure;
 
 Plane plane1 = new Plane();
 plane1.Capacity = 100;
@@ -67,3 +68,12 @@ foreach (var g in fm.DestinationGroupedFlightsV2())
 Console.WriteLine();
 fm.FlightDetailsDel(TestData.BoingPlane);
 Console.WriteLine(" average duration : "+fm.DurationAverageDel(destination));
+
+// database linking
+// outils -> gestionnaire de packages NuGet -> Console du Gestionnaire de package
+// Add-Migration MigrationName
+// Update-Database
+AMContext context = new AMContext();
+context.Flights.Add(TestData.flight1);
+context.SaveChanges();
+
