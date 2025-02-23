@@ -6,12 +6,12 @@ Welcome to the **DotNet** repository! This project is part of my learning journe
 
 Here's the traffic overview for this repository:
 
-- 👁️ Total Views Since Creation: **[VIEWS_COUNT]** views
-- 🔄 Total Clones Since Creation: **[CLONES_COUNT]** clones
+- 👁️ **Total Views** Since Creation: **53** views
+- 🔄 **Total Clones** Since Creation: **12** clones
 
 ---
 
-Last traffic data update: **[LAST_UPDATED]**
+Last traffic data update: **Mon Feb 24 2025 00:27:47 CET**
 
 ---
 ### Getting Started
