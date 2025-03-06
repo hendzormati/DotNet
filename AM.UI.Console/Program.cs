@@ -15,7 +15,7 @@ Console.WriteLine("Initialisateur d'objet : "+plane3.ToString());
 Plane plane4 = new Plane {  };
 Console.WriteLine("Initialisateur d'objet vide : "+plane4.ToString());
 // using initialisation from now no more constructeur 
-Passenger passenger = new Passenger {FirstName="hend",LastName="zormati",EmailAddress="a@b.c" };
+Passenger passenger = new Passenger { fullName = new FullName { FirstName="hend", LastName="zormati" },EmailAddress="a@b.c", PassportNumber= "99gsfgdfgdf243" };
 
 Console.WriteLine(passenger.ToString());
 passenger.UpperFullName();
@@ -25,8 +25,8 @@ Console.WriteLine(passenger.CheckProfile("hend", "not")+"\n");
 Console.WriteLine(passenger.CheckProfile("hend", "zormati","a@b.c")+"\n");
 Console.WriteLine(" CHeck with mail : \n "+ passenger.CheckProfileComplete("hend", "zormati", "a@b.c")+"\n");
 Console.WriteLine(" CHeck without mail : \n "+ passenger.CheckProfileComplete("hend", "zormati")+"\n");
-Staff staff = new Staff { FirstName="Staff", LastName="zormati",Function="staff" };
-Traveller traveller = new Traveller { FirstName="Traveller", LastName="zormati",Nationality ="tunisian" };
+Staff staff = new Staff { fullName = new FullName { FirstName="hend", LastName="zormati" }, Function="staff", PassportNumber= "98243" };
+Traveller traveller = new Traveller { fullName = new FullName { FirstName="hend", LastName="zormati" }, Nationality ="tunisian", PassportNumber= "99253" };
 Console.WriteLine(staff.ToString());
 staff.PassengerType();
 Console.WriteLine(traveller.ToString());
@@ -74,6 +74,6 @@ Console.WriteLine(" average duration : "+fm.DurationAverageDel(destination));
 // Add-Migration MigrationName
 // Update-Database
 AMContext context = new AMContext();
-context.Flights.Add(TestData.flight1);
+context.Flights.Add(TestData.flight2);
 context.SaveChanges();
 
