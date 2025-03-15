@@ -2,7 +2,7 @@ name: Update Profile README with Repo Traffic
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Run once daily at midnight
+    - cron: '0 0 * * 0'  # Run once daily at midnight
   workflow_dispatch:      # Keep manual trigger for testing
 
 jobs:
