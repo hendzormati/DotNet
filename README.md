@@ -7,13 +7,13 @@ Welcome to the **DotNet** repository! This project is part of my learning journe
 Here's the traffic overview for this repository:
 
 - 👁️ **Total Views** Since Creation: **52** views
-- 🔄 **Total Clones** Since Creation: **78** clones
-- 📈 **Recent Views** (Last 14 days): **15** views
-- 📊 **Recent Clones** (Last 14 days): **10** clones
+- 🔄 **Total Clones** Since Creation: **86** clones
+- 📈 **Recent Views** (Last 14 days): **6** views
+- 📊 **Recent Clones** (Last 14 days): **18** clones
 
 ---
 
-Last traffic data update: **Sun Nov 30 2025 03:21:56 CET**
+Last traffic data update: **Sun Dec 07 2025 03:22:36 CET**
 
 ---
 ### Getting Started
